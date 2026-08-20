@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Aktiv IPv4 unvanlarini gosterir
+
+ifconfig | grep "inet " | awk '{print $2}'
