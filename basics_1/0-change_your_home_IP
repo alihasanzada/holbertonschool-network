@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# localhost -> 127.0.0.2 ve facebook.com -> 8.8.8.8 kimi konfiqurasiya edir
+# localhost ve facebook.com-un IP-lerini deyisdirir
 
-sed -i 's/^127\.0\.0\.1[[:space:]]\+localhost$/127.0.0.2 localhost/' /etc/hosts
+sed 's/^127\.0\.0\.1[[:space:]]\+localhost$/127.0.0.2 localhost/' /etc/hosts > /tmp/hosts_new
+cat /tmp/hosts_new > /etc/hosts
 echo "8.8.8.8 facebook.com" >> /etc/hosts
