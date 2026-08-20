@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# localhost-da 98-ci portda dinleyir
+
+nc -l -p 98
